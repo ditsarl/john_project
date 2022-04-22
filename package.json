@@ -1,0 +1,15 @@
+{
+  "name": "john_project",
+  "version": "1.0.0",
+  "description": "Projet des services de facilitation via ussd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ionic": "^5.4.16",
+    "ussd-router": "^0.1.5"
+  }
+}
