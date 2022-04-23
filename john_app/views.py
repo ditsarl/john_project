@@ -172,7 +172,7 @@ SERVICE = Choices(
 	('TAXI CLIM',6,'Taxi Clim'),
 	('TAXI VIP',7,'Taxi VIP'),
 	('MOBILIER',8,'Mobilier'),
-	('MUTUELLE DE SANTE',8,'Mutuelle'),
+	('MUTUELLE DE SANTE',9,'Mutuelle'),
 )
 
 @csrf_exempt
@@ -195,14 +195,14 @@ def index(request):
 		response = ""
 
 		if texte == "" :
-			response = "CON BIENVENU(E) CHEZ DISCOVERY FACILITIES SERVICES (DFS). \n VEUILLEZ TAPER LE CHIFFRE CORRESPONDANT A VOTRE CHOIX \n \n"
+			response = "CON Bienvenu(e) chez Discovery Facilities Services (DFS) \n Taper le chiffre correspondant au besoin : \n \n"
 			# response .= "1. My Account \n"
 			#response += "1. ENREGISTRER UN HOPITAL \n"
 			#response += "2. DECLARER UNE NAISSANCE \n"
 			#response += "3. DECLARER UN ENFANT A LA COMMUNE"
 			response += "1. Abonnement \n"
 			response += "2. Annuaire \n"
-			response += "3. Mass marketing (ENVOYEZ-NOUS VOTRE BDD DE NUMEROS AU FORMAT CSV OU EXCEL A L'ADRESSE:support@di-data-dfs.com) \n"
+			response += "3. Mass marketing \n"
 			response += "4. Carnet d'adresses \n"
 			response += "5. Immobilier \n"
 			response += "6. Services VISA \n"
